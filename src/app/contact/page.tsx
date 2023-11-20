@@ -32,7 +32,7 @@ export default function Blog() {
                 </a>
                 <div className="nav-links" id="navLinks">
                     {/* Reposnive bar open and close */}
-                    <i className="fa fa-times" onClick="hideMenu()" />
+                    <i className="fa fa-times" on-Click="hideMenu()" />
                     <ul>
                         <li>
                             <Link href="/">Home</Link>
@@ -51,7 +51,7 @@ export default function Blog() {
                         </li>
                     </ul>
                 </div>
-                <i className="fa fa-bars" onClick="showMenu()" />
+                <i className="fa fa-bars" on-Click="showMenu()" />
                 {/* Reposnive bar open and close */}
             </nav>
             <h1>Contact Us</h1>

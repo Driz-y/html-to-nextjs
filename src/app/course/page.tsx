@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Script from 'next/script'
-
+import Image from 'next/image'
 export default function Course() {
     return (
         <>
@@ -32,7 +32,7 @@ export default function Course() {
                     </a>
                     <div className="nav-links" id="navLinks">
                         {/* Reposnive bar open and close */}
-                        <i className="fa fa-times" onClick="hideMenu()" />
+                        <i className="fa fa-times" on-Click="hideMenu()" />
                         <ul>
                             <li>
                                 <Link href="/">Home</Link>
@@ -51,7 +51,7 @@ export default function Course() {
                             </li>
                         </ul>
                     </div>
-                    <i className="fa fa-bars" onClick="showMenu()" />
+                    <i className="fa fa-bars" on-Click="showMenu()" />
                     {/* Reposnive bar open and close */}
                 </nav>
                 <h1>Our Courses</h1>
@@ -97,7 +97,7 @@ export default function Course() {
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 <div className="row">
                     <div className="facilities-col">
-                        <img src="img/course1.png" alt="" />
+                        <Image width={400} height={200} src="/img/course1.png" alt="" />
                         <h3>Web Development</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -105,7 +105,7 @@ export default function Course() {
                         </p>
                     </div>
                     <div className="facilities-col">
-                        <img src="img/course2.png" alt="" />
+                        <Image width={400} height={200} src="/img/course2.png" alt="" />
                         <h3>Artificial Intelligence</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -113,7 +113,7 @@ export default function Course() {
                         </p>
                     </div>
                     <div className="facilities-col">
-                        <img src="img/course3.png" alt="" />
+                        <Image width={400} height={200} src="/img/course3.png" alt="" />
                         <h3>Data Science</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio

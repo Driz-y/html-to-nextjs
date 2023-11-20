@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Script from 'next/script'
-
+import Image from 'next/image'
 
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
           </a>
           <div className="nav-links" id="navLinks">
             {/* Reposnive bar open and close */}
-            <i className="fa fa-times" onClick="hideMenu()" />
+            <i className="fa fa-times" on-Click="hideMenu()" />
             <ul>
               <li>
                 <Link href="/">Home</Link>
@@ -53,7 +53,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <i className="fa fa-bars" onClick="showMenu()" />
+          <i className="fa fa-bars" on-Click="showMenu()" />
           {/* Reposnive bar open and close */}
         </nav>
         <div className="text_box">
@@ -120,19 +120,19 @@ export default function Home() {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         <div className="row">
           <div className="campus-col">
-            <img src="img/Campus1.png" alt="" />
+            <Image width={400} height={250} src="/img/Campus1.png" alt="" />
             <div className="layer">
               <h3>DELHI</h3>
             </div>
           </div>
           <div className="campus-col">
-            <img src="img/Campus2.png" alt="" />
+            <Image width={400} height={250} src="/img/Campus2.png" alt="" />
             <div className="layer">
               <h3>HYDERABAD</h3>
             </div>
           </div>
           <div className="campus-col">
-            <img src="img/Campus3.png" alt="" />
+            <Image width={400} height={250} src="/img/Campus3.png" alt="" />
             <div className="layer">
               <h3>MUMBAI</h3>
             </div>
@@ -150,7 +150,7 @@ export default function Home() {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         <div className="row">
           <div className="facilities-col">
-            <img src="img/libary.png" alt="" />
+            <Image width={300} height={230} src="/img/libary.png" alt="" />
             <h3>Best Libary</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -158,7 +158,7 @@ export default function Home() {
             </p>
           </div>
           <div className="facilities-col">
-            <img src="img/playground.png" alt="" />
+            <Image width={300} height={230} src="/img/playground.png" alt="" />
             <h3>Athletics</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -166,7 +166,7 @@ export default function Home() {
             </p>
           </div>
           <div className="facilities-col">
-            <img src="img/food.png" alt="" />
+            <Image width={300} height={220} src="/img/food.png" alt="" />
             <h3>Tasty and Healthy Food</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -186,7 +186,7 @@ export default function Home() {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         <div className="row">
           <div className="testimonials-col">
-            <img src="/img/user.png" alt="oo.." />
+            <Image width={400} height={250} src="/img/user.png" alt="oo.." />
             <div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -203,7 +203,7 @@ export default function Home() {
             </div>
           </div>
           <div className="testimonials-col">
-            <img src="img/user.png" alt="oo.." />
+            <Image width={400} height={250} src="/img/user.png" alt="oo.." />
             <div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
@@ -239,7 +239,7 @@ export default function Home() {
           Aliquid ab deserunt exercitationem, illum molestiae dolorem.
         </p>
         <div className="icons">
-          <a href="https://www.facebook.com/piaic" target="_blank" rel="noopener noreferrer">
+          <a  href="https://www.facebook.com/piaic" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook-f" />
           </a>
           <a href="https://www.instagram.com/piaicofficial/" target="_blank" rel="noopener noreferrer">

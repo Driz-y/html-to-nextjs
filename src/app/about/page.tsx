@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Script from 'next/script'
-
+import Image from 'next/image'
 
 
 export default function About() {
@@ -33,7 +33,7 @@ export default function About() {
                 </a>
                 <div className="nav-links" id="navLinks">
                     {/* Reposnive bar open and close */}
-                    <i className="fa fa-times" onClick="hideMenu()" />
+                    <i className="fa fa-times" on-Click="hideMenu()" />
                     <ul>
                         <li>
                             <Link href="/">Home</Link>
@@ -52,7 +52,7 @@ export default function About() {
                         </li>
                     </ul>
                 </div>
-                <i className="fa fa-bars" onClick="showMenu()" />
+                <i className="fa fa-bars" on-Click="showMenu()" />
                 {/* Reposnive bar open and close */}
             </nav>
             <h1>About Us</h1>
@@ -74,7 +74,7 @@ export default function About() {
                     </a>
                 </div>
                 <div className="about-col">
-                    <img src="img/about.png" alt="" />
+                    <Image width={400} height={250} src="img/about.png" alt="" />
                 </div>
             </div>
         </section>

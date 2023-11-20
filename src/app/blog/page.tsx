@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Script from 'next/script'
+import Image from 'next/image'
 
 export default function Blog() {
     return (
@@ -32,7 +33,7 @@ export default function Blog() {
                     </a>
                     <div className="nav-links" id="navLinks">
                         {/* Reposnive bar open and close */}
-                        <i className="fa fa-times" onClick="hideMenu()" />
+                        <i className="fa fa-times" on-Click="hideMenu()" />
                         <ul>
                             <li>
                                 <Link href="/">Home</Link>
@@ -51,7 +52,7 @@ export default function Blog() {
                             </li>
                         </ul>
                     </div>
-                    <i className="fa fa-bars" onClick="showMenu()" />
+                    <i className="fa fa-bars" on-Click="showMenu()" />
                     {/* Reposnive bar open and close */}
                 </nav>
                 <h1>Our Post</h1>
@@ -62,7 +63,7 @@ export default function Blog() {
                     <div className="blog-left">
                         <h2>Our Certificate &amp; Online Program</h2>
                         <h5>Nov 20, 2023</h5>
-                        <img src="img/post.png" alt="" />
+                        <Image width={400} height={250} src="/img/post.png" alt="" />
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
                             dolor consequatur, nobis quae obcaecati delectus at aspernatur,
@@ -101,8 +102,8 @@ export default function Blog() {
                         <div className="comment-box">
                             <h3>Leave a Comment</h3>
                             <form className="comment-form">
-                                <input type="text" placeholder="Enter Name" required="" />
-                                <input type="email" placeholder="Enter Email" required="" />
+                                <input type="text" placeholder="Enter Name" />
+                                <input type="email" placeholder="Enter Email" />
                                 <textarea rows={5} placeholder="Your Comment" defaultValue={""} />
                                 <button type="submit" className="hero_btn btn">
                                     POST COMMENT
