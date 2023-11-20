@@ -32,7 +32,7 @@ export default function Course() {
                     </a>
                     <div className="nav-links" id="navLinks">
                         {/* Reposnive bar open and close */}
-                        <i className="fa fa-times" onclick="hideMenu()" />
+                        <i className="fa fa-times" onClick="hideMenu()" />
                         <ul>
                             <li>
                                 <Link href="/">Home</Link>
@@ -51,7 +51,7 @@ export default function Course() {
                             </li>
                         </ul>
                     </div>
-                    <i className="fa fa-bars" onclick="showMenu()" />
+                    <i className="fa fa-bars" onClick="showMenu()" />
                     {/* Reposnive bar open and close */}
                 </nav>
                 <h1>Our Courses</h1>
